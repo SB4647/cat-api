@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+* {
+  margin: 0;
+}
+
+.nav {
+  background-color: grey;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-style: none;
+    height: 75px;
+  }
+
+  &__link {
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+  }
+}

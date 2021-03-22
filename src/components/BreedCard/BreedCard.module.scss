@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.contents {
+  padding: $base-spacing * 4;
+  position: relative;
+  border: 1px solid black;
+
+  .heart {
+    position: absolute;
+    top: $base-spacing * 4;
+    right: $base-spacing * 4;
+    color: $primary-color;
+    font-size: 1.3rem;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  h2,
+  h3 {
+    color: $primary-color;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    margin-bottom: $base-spacing * 2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: $base-spacing;
+  }
+
+  .list {
+    height: 100px;
+  }
+
+  p {
+    text-align: justify;
+    color: $secondary-text;
+    margin-bottom: $base-spacing * 2;
+  }
+}
