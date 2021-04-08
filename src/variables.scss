@@ -1,61 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
-
-$base-spacing: 5px;
-
-$primary-color: rgb(70, 50, 111);
-$secondary-color: rgb(236, 69, 102);
-$tertiary-color: rgb(141, 140, 140);
-
-$primary-color-transparent: rgba(70, 50, 111, 0.85);
-$secondary-color-transparent: rgba(236, 69, 102, 0.85);
-$tertiary-color-transparent: rgba(141, 140, 140, 0.85);
-
-$primary-border: solid 2px $primary-color;
-$secondary-border: solid 2px $secondary-color;
-
-// $primary-tint: rgb(97, 69, 151);
-// $secondary-tint: rgb(230, 105, 130);
-// $tertiary-tint: rgb(192, 191, 191);
-
-// $primary-color: white;
-// $secondary-color: rgb(187, 186, 186);
-
-$primary-text: $secondary-color;
-$secondary-text: gray;
-$tertiary-text: rgb(199, 197, 197);
-
-$card-shadowing: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
-$card-hover-shadowing: 0 14px 28px rgba(0, 0, 0, 0.27),
-  0 10px 10px rgba(0, 0, 0, 0.3);
-
-$NavBar-height-mb: 60px;
-$NavBar-height: 75px;
-
-$border-rounding: 5px;
-
-%card {
-  max-height: 400px;
-  max-width: 275px;
-  height: 100%;
-  width: 100%;
-  border-radius: $border-rounding;
-  box-shadow: $card-shadowing;
-  border: $primary-border;
-  backface-visibility: hidden;
-  background-color: white;
-  position: absolute;
-
-  &:hover {
-    box-shadow: $card-hover-shadowing;
-    border: $secondary-border;
-    cursor: pointer;
-
-    .recipeDetails {
-      border-color: $secondary-color;
-
-      h2 {
-        color: $primary-text;
-      }
-    }
-  }
+@font-face {
+  font-family: "cat-font";
+  src: url("./fonts/SleepyCatRegular-7BYKV.ttf") format("truetype");
 }
+
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: #0057ff;
+$secondary-color: #ffffff;
+
+$title-font-family: "cat-font";
+$title-font-size: 2em;
+
+//nav bar
+$nav-background-color: linear-gradient(
+  to top,
+  $secondary-color 1%,
+  $primary-color 99%
+);
+$nav-height: 100px;
+$nav-link-font-family: "Crimson Text", serif;
+$nav-link-font-size: 12px;
+$hover-link-color: rgb(224, 172, 73);
+
+//card
+$card-background-color: rgba(0, 87, 255, 0.1);
+$card-font-color: black;
+$card-heading-font-family: "Crimson Text", serif;
+$card-paragraph-font-family: "Work Sans", sans-serif;
+$card-padding: 10px;
+$card-border: 5px solid black;
+$card-border-radius: 10px;
