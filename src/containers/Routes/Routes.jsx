@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Routes.module.scss";
 import { Switch, Route } from "react-router-dom";
 import Dashboard from "../Dashboard/Dashboard";
 import Favourites from "../Favourites/Favourites";

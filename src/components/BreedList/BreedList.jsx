@@ -1,8 +1,6 @@
 import styles from "./BreedList.module.scss";
 import BreedCard from "../BreedCard/BreedCard";
 
-import { catAPIRequestInfo } from "../../data/breeds";
-
 const BreedList = ({ breedsToDisplay, toogleBreedFav }) => {
     return (
         <div className={styles.cardList}>
@@ -10,11 +8,10 @@ const BreedList = ({ breedsToDisplay, toogleBreedFav }) => {
                 return (
                     <BreedCard
                         key={i}
-                        breedID={breed.id}
                         name={breed.name}
                         description={breed.description}
                         isFav={breed.isFav}
-                        URL={breed}
+                        imageURL={breed.url}
                         toogleBreedFav={toogleBreedFav}
                     />
                 );
