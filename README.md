@@ -1,3 +1,12 @@
+# Cat-API React App
+
+### _nology Challenge 
+
+Specifications:
+  - Uses a searchbar or dropdown to search for a specific breed of cat. Information on a searched cat should be shown inside of a card.
+  - Uses the The Cat API (https://docs.thecatapi.com/) to get information on different breeds of cats.
+  - Cat breed cards can be added to a favourites section but clicking on a heart symbol.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
