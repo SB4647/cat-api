@@ -17,7 +17,7 @@ const Navigation = ({ setSearchedBreed, paths, breedsData }) => {
                     {paths.map((path, i) => (
                         <li key={i}>
                             <Link className={styles.nav__link} to={path}>
-                                {path.substring(1)}
+                                {path === "/" ? "Dashboard" : path.substring(1)}
                             </Link>
                         </li>
                     ))}
