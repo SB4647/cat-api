@@ -3,18 +3,23 @@ import styles from "./Favourites.module.scss";
 import BreedList from "../../components/BreedList/BreedList";
 
 const Favourites = ({ breeds, toogleBreedFav }) => {
-  const favouriteBreeds = breeds.filter((breed) => breed.isFav);
+    const favouriteBreeds = breeds.filter((breed) => breed.isFav);
 
-  const contentJsx = favouriteBreeds.length ? (
-    <BreedList
-      breedsToDisplay={favouriteBreeds}
-      toogleBreedFav={toogleBreedFav}
-    />
-  ) : (
-    <p>No favourites to show</p>
-  );
+    const contentJsx = favouriteBreeds.length ? (
+        <BreedList
+            breedsToDisplay={favouriteBreeds}
+            toogleBreedFav={toogleBreedFav}
+        />
+    ) : (
+        <p>No favourites to show</p>
+    );
 
-  return <section className={styles.contents}>{contentJsx}</section>;
+    return (
+        <div className={styles.contents}>
+            <h1>FAVOURITES</h1>
+            {contentJsx}
+        </div>
+    );
 };
 
 export default Favourites;

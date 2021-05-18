@@ -120,12 +120,12 @@ function App() {
         <div className="App">
             <Router>
                 <Navigation
-                    paths={["/dashboard", "/favourites"]}
+                    paths={["/", "/favourites"]}
                     setSearchedBreed={setSearchedBreed}
                     breedsData={breeds}
                 />
                 <Routes
-                    paths={["/dashboard", "/favourites"]}
+                    paths={["/", "/favourites"]}
                     breeds={breeds}
                     displayedBreeds={displayedBreeds}
                     toogleBreedFav={toogleBreedFav}
