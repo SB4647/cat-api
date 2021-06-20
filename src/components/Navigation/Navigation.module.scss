@@ -1,48 +1,66 @@
 @import "../../variables.scss";
 
 .nav {
-  background: $nav-background-color;
-  display: flex;
-  justify-content: space-between;
-  height: $nav-height;
-  align-items: center;
-  padding: 0px 10px;
-  max-width: 100vw;
-
-  &__items {
+    background: $nav-background-color;
     display: flex;
     justify-content: space-between;
+    height: $nav-height;
     align-items: center;
-    list-style-type: none;
-    font-style: none;
-    width: 420px;
-  }
+    padding: 0px 10px;
+    max-width: 100vw;
 
-  &__heading {
-    font-family: $title-font-family;
-    font-size: $title-font-size;
-    font-size: 30px;
-  }
-
-  &__links {
-    display: flex;
-  }
-
-  &__link {
-    color: black;
-    font-family: "Nunito Sans", sans-serif;
-    text-decoration: none;
-    font-size: $nav-link-font-size;
-    text-transform: uppercase;
-    margin: 0px 10px;
-
-    &:hover {
-      color: $hover-link-color;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        font-style: none;
+        margin-right: 10%;
     }
-  }
 
-  &__search {
-    text-align: right;
-    width: 200px;
-  }
+    &__heading {
+        font-family: $title-font-family;
+        font-size: 3rem;
+        color: $title-font-color;
+
+        @media only screen and (max-width: 800px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (min-width: 1000px) {
+            font-size: $title-font-size;
+        }
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        color: black;
+        position: relative;
+        font-family: $nav-link-font-family;
+        text-decoration: none;
+        font-size: $nav-link-font-size;
+        text-transform: uppercase;
+        margin: 0px 10px;
+    }
+
+    &__link::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s linear;
+    }
+
+    &__link:hover::after {
+        transform-origin: bottom left;
+        transform: scale(1);
+    }
 }

@@ -1,34 +1,30 @@
-@font-face {
-  font-family: "cat-font";
-  src: url("./fonts/SleepyCatRegular-7BYKV.ttf") format("truetype");
-}
-
+@import url("//db.onlinewebfonts.com/c/b1763f89102fde2cd1fdc592773be9f0?family=Cat+Font");
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&display=swap");
 
 * {
-  margin: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-$primary-color: #0057ff;
+$primary-color: rgb(243, 164, 17);
 $secondary-color: #ffffff;
 
-$title-font-family: "cat-font";
-$title-font-size: 2em;
-
 //nav bar
-$nav-background-color: linear-gradient(
-  to top,
-  $secondary-color 1%,
-  $primary-color 99%
-);
+$title-font-family: "Cat Font";
+$title-font-size: 4em;
+$title-font-color: black;
+$nav-background-color: $primary-color;
 $nav-height: 100px;
-$nav-link-font-family: "Crimson Text", serif;
-$nav-link-font-size: 12px;
+$nav-link-font-family: "Montserrat", sans-serif;
+$nav-link-font-size: 1rem;
 $hover-link-color: rgb(224, 172, 73);
 
+//pages
+$page-heading-font: "Montserrat", sans-serif;
+$page-paragraph-font: "Merriweather", serif;
+
 //card
-$card-background-color: rgba(0, 87, 255, 0.1);
+$card-background-color: rgba(243, 164, 17, 0.5);
 $card-font-color: black;
 $card-heading-font-family: "Crimson Text", serif;
 $card-paragraph-font-family: "Work Sans", sans-serif;

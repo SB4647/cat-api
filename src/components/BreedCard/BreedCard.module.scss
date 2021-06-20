@@ -1,52 +1,51 @@
 @import "../../variables.scss";
 
 .card {
-  background-color: $card-background-color;
-  position: relative;
-  border: $card-border;
-  border-radius: $card-border-radius;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 550px;
+    background-color: $card-background-color;
+    position: relative;
+    border: $card-border;
+    border-radius: $card-border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
 
-  &__heart {
-    position: absolute;
-    right: 20px;
-    color: rgb(219, 23, 56);
-    font-size: 1.3rem;
-  }
+    &__heart {
+        position: absolute;
+        right: 20px;
+        color: rgb(219, 23, 56);
+        font-size: 1.3rem;
+    }
 
-  &__imageWrapper {
-    border-top: $card-border;
-    height: 50%;
-    width: 100%;
-  }
+    &__imageWrapper {
+        border-top: $card-border;
+        height: 50%;
+        width: 100%;
+    }
 
-  &__image {
-    height: 100%;
-    width: 100%;
-  }
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
 
-  &__heading {
-    font-family: $card-heading-font-family;
-    color: $card-font-color;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    //margin-bottom: $base-spacing * 2;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+    &__heading {
+        font-family: $card-heading-font-family;
+        color: $card-font-color;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
-  &__text {
-    padding: $card-padding;
-  }
+    &__text {
+        padding: $card-padding;
+    }
 
-  &__para {
-    text-align: justify;
-    font-family: $card-paragraph-font-family;
-    color: $card-font-color;
-  }
+    &__para {
+        text-align: justify;
+        font-family: $card-paragraph-font-family;
+        color: $card-font-color;
+    }
 }

@@ -2,22 +2,20 @@ import React from "react";
 import styles from "./Favourites.module.scss";
 import BreedList from "../../components/BreedList/BreedList";
 
-const Favourites = ({ breeds, toogleBreedFav }) => {
-    const favouriteBreeds = breeds.filter((breed) => breed.isFav);
-
-    const contentJsx = favouriteBreeds.length ? (
-        <BreedList
-            breedsToDisplay={favouriteBreeds}
-            toogleBreedFav={toogleBreedFav}
-        />
-    ) : (
-        <p>No favourites to show</p>
-    );
-
+const Favourites = ({ favouriteBreeds, toogleBreedFav }) => {
     return (
         <div className={styles.contents}>
-            <h1>FAVOURITES</h1>
-            {contentJsx}
+            <h1 className={styles.contents__heading}>FAVOURITES</h1>
+            {favouriteBreeds.length ? (
+                <BreedList
+                    breedsToDisplay={favouriteBreeds}
+                    toogleBreedFav={toogleBreedFav}
+                />
+            ) : (
+                <p className={styles.contents__paragraph}>
+                    No favourites to show
+                </p>
+            )}
         </div>
     );
 };

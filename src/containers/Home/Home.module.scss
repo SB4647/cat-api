@@ -2,8 +2,17 @@
 
 .contents {
     margin: 20px 0px;
+
     min-height: 100vh;
+
     &__heading {
         font-family: $page-heading-font;
+    }
+
+    &__paragraph {
+        display: inline-block;
+        text-align: center;
+        font-family: $page-paragraph-font;
+        width: 800px;
     }
 }

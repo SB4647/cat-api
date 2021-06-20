@@ -119,16 +119,13 @@ function App() {
     return (
         <div className="App">
             <Router>
-                <Navigation
-                    paths={["/", "/favourites"]}
-                    setSearchedBreed={setSearchedBreed}
-                    breedsData={breeds}
-                />
+                <Navigation paths={["/", "/favourites"]} />
                 <Routes
                     paths={["/", "/favourites"]}
                     breeds={breeds}
                     displayedBreeds={displayedBreeds}
                     toogleBreedFav={toogleBreedFav}
+                    setSearchedBreed={setSearchedBreed}
                 />
             </Router>
         </div>
